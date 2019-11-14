@@ -257,6 +257,8 @@ header .two-divs div:nth-child(2) {
   flex: 1;
   min-height: 80px;
   max-height: 120px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .second {
@@ -296,15 +298,6 @@ section {
   margin-bottom: 5px;
 }
 
-.one-div div,
-.two-divs div,
-.three-divs div {
-  /*
-  border: 1px solid black;
-  */
-  padding: 10px;
-}
-
 .one-div,
 .two-divs,
 .three-divs {
@@ -312,6 +305,15 @@ section {
   max-height: 450px;
   margin: 0 auto;
   display: flex;
+}
+
+.one-div div,
+.two-divs div,
+.three-divs div {
+  /*
+  border: 1px solid black;
+  */
+  padding: 10px;
 }
 
 .two-divs {
@@ -338,6 +340,10 @@ section {
 
 .three-divs div {
   max-width: 300px;
+}
+
+.one-div .middle-img {
+  width: 100%;
 }
 
 /* contact & footer */
@@ -515,8 +521,8 @@ TABLET LAYOUT
     display: flex;
     flex-direction: inline-flex;
     justify-content: space-evenly;
-    padding: 10px;
-    margin: 5px;
+    padding: 20px;
+    margin: 15px;
   }
   header nav .logo-div {
     order: 1;
@@ -568,9 +574,50 @@ TABLET LAYOUT
     margin: 0px;
     display: none;
   }
-  /* */
+  /* Header: Centering*/
+  .banner {
+    margin: 30px auto 30px auto;
+  }
+  .cir-banner  {
+    display: none;
+  }
   .cir-img {
     display: none;
+  }
+  /* Services.html */
+  .services-header-img {
+    margin-top: -7.5px;
+  }
+  /* Sections & Divs */
+  section {
+    padding-top: 7.5px;
+    padding-bottom: 3.5px;
+    margin-top: 4px;
+    margin-bottom: 3.5px;
+  }
+  .one-div,
+  .two-divs,
+  .three-divs {
+    max-width: 750px;
+    max-height: 400px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .one-div div,
+  .two-divs div,
+  .three-divs div {
+    padding: 10px;
+  }
+  .two-divs div {
+    max-width: 375px;
+  }
+  .three-divs div {
+    max-width: 250px;
+  }
+  /* middle image */
+  .one-div .middle-img {
+    width: 100%;
+    max-width: 750px;
   }
 }
 
