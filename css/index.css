@@ -409,7 +409,7 @@ OTHER ITEMS
 }
 
 /* text */
-header nav a {
+header nav .links a {
   font-size: 0.8rem;
   color: var(--nav-text);
   text-decoration: none;
@@ -622,10 +622,10 @@ TABLET LAYOUT
     padding: 15px;
   }
   .two-divs div {
-    max-width: 325px;
+    max-width: 315px;
   }
   .three-divs div {
-    max-width: 250px;
+    max-width: 260px;
   }
   /* middle image */
   .one-div .middle-img {
@@ -668,7 +668,7 @@ TABLET LAYOUT
   }
   
   /* text */
-  header nav a {
+  header nav .links a {
     font-size: 0.7rem;
   }
   h1 {
@@ -717,5 +717,122 @@ MOBILE LAYOUT
     order: 2;
     display: flex;
     flex-direction: column;
+  }
+  header nav .links a {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 17.5px;
+    margin: 12.5px;
+    width: 450px;
+    border-bottom: 0.5px solid black;
+  }
+  header nav .links a:first-child {
+    padding-top: 35px;
+    margin-top: 25px;
+    border-top: 0.5px solid black;
+  }
+  header nav .logo-div {
+    order: 1;
+    display: flex;
+    padding: 0;
+    /* centering */
+    margin: 10px auto 10px auto;
+  }
+  header nav .logo-div .logo {
+    margin: auto;
+    max-width: 155px;
+  }
+  /* Header: fluid containers */
+  .equal-height {
+    max-width: 500px;
+    max-height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Services.html */
+  .services-header-img {
+    margin-top: -6.5px;
+  }
+  /* Sections & Divs */
+  section {
+    padding-top: 6.5px;
+    padding-bottom: 3.25px;
+    margin-top: 3.85px;
+    margin-bottom: 3.25px;
+  }
+  .one-div,
+  .two-divs,
+  .three-divs {
+    max-width: 500px;
+    max-height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .one-div div,
+  .two-divs div,
+  .three-divs div {
+    padding: 12.5px;
+    padding-top: 20px;
+    max-width: 465px;
+  }
+  /* middle image */
+  .one-div .middle-img {
+    width: 97.5%;
+    max-width: 475px;
+  }
+  /* contact & footer */
+  .contact-div {
+    max-width: 475px;
+    line-height: 0.95rem;
+  }
+  footer {
+    padding: 2px;
+    margin: 2.5px;
+  }
+  
+  /*
+  OTHER ITEMS
+  */
+
+  /* Button */
+  .get-started {
+    background-color: var(--bg-color);
+    border: 0.85px solid black;
+    color: black;
+    padding: 5px 25px;
+    margin-top: -10px;
+    font-size: 0.75rem;
+  }
+  /* HR */
+  .hr-light,
+  .hr-dark {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* text */
+  header nav .links a {
+    font-size: 1.15rem;
+  }
+  /* text */
+  h1 {
+    font-size: 3.75rem;
+    text-align: center;
+  }
+  p {
+    max-width: 700px;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.05rem;
+  }
+  ul {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
   }
 }
