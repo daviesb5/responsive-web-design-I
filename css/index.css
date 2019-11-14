@@ -342,8 +342,14 @@ section {
   max-width: 300px;
 }
 
+.one-div {
+  margin: 30px auto 30px auto;
+}
+
 .one-div .middle-img {
-  width: 100%;
+  width: 97.5%;
+  max-width: 900px;
+  margin: auto;
 }
 
 /* contact & footer */
@@ -616,8 +622,62 @@ TABLET LAYOUT
   }
   /* middle image */
   .one-div .middle-img {
-    width: 100%;
+    width: 97.5%;
     max-width: 750px;
+  }
+  /* contact & footer */
+  .contact-div {
+    max-width: 750px;
+    line-height: 0.95rem;
+  }
+  .contact-div > div {
+    max-width: 196px;
+    padding: 10px;
+  }
+  footer {
+    padding: 2.25px;
+    margin: 2.75px;
+  }
+  
+  /*
+  OTHER ITEMS
+  */
+
+  /* Button */
+  .get-started {
+    background-color: var(--bg-color);
+    border: 0.1px solid black;
+    color: black;
+    padding: 6.5px 30px;
+    margin-top: -15px;
+    font-size: 0.75rem;
+  }
+  
+  /* HR */
+  .hr-light,
+  .hr-dark {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+  /* text */
+  header nav a {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 3.75rem;
+    text-align: center;
+  }
+  p {
+    max-width: 700px;
+    font-size: 0.68rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.0315rem;
+  }
+
+  ul {
+    font-size: 0.68rem;
+    letter-spacing: 0.0315rem;
   }
 }
 
