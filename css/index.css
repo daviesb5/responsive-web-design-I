@@ -500,7 +500,7 @@ Service Grid Layout
 TABLET LAYOUT
 ================================
 */
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .content {
     max-width: 750px;
     margin: auto;
@@ -513,8 +513,8 @@ TABLET LAYOUT
     margin-bottom: 7.5px;
   }
   header nav {
-    padding-top: 17.5px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     /* flexbox */
     display: flex;
     flex-direction: column;
@@ -533,6 +533,13 @@ TABLET LAYOUT
   header nav .logo-div {
     order: 1;
     display: flex;
+    padding: 0;
+    /* centering */
+    margin: 15px auto 15px auto;
+  }
+  header nav .logo-div .logo {
+    margin: auto;
+    max-width: 135px;
   }
   header .two-divs {
     display: flex;
@@ -612,10 +619,10 @@ TABLET LAYOUT
   .one-div div,
   .two-divs div,
   .three-divs div {
-    padding: 10px;
+    padding: 15px;
   }
   .two-divs div {
-    max-width: 375px;
+    max-width: 325px;
   }
   .three-divs div {
     max-width: 250px;
@@ -674,8 +681,11 @@ TABLET LAYOUT
     line-height: 1.1rem;
     letter-spacing: 0.0315rem;
   }
-
   ul {
+    font-size: 0.68rem;
+    letter-spacing: 0.0315rem;
+  }
+  footer p {
     font-size: 0.68rem;
     letter-spacing: 0.0315rem;
   }
@@ -686,5 +696,26 @@ TABLET LAYOUT
 MOBILE LAYOUT
 ================================
 */
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
+  .content {
+    max-width: 450px;
+    margin: auto;
+  }
+  /* header, nav, sections, divs, etc. */
+  /* header, nav, sections, divs, etc. */
+  header {
+    padding: 2.85px;
+    padding-bottom: 7.5px;
+    margin: 2.85px;
+    margin-bottom: 6.5px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav .links {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
 }
